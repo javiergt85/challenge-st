@@ -1,0 +1,4 @@
+<ng-container *ngIf="element"> 
+  <p [ngClass]="{'text-bold' : isTextBold()}" [ngStyle]="{'text-indent': getIndent()}" (click)="elementClicked(element)">{{ element.name }} -- {{ printLevel() }} </p>
+  <app-list-elements *ngIf="element.children" [elements]="element.children" [parentLevel]="printLevel()"></app-list-elements>
+</ng-container>
