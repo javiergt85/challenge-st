@@ -1,4 +1,3 @@
 <div *ngFor="let element of elements; let i = index">
   <app-element-leveled [element]="element" [parentLevel]="parentLevel" [index]="i + 1" (elementClickedEvent)="elementClicked($event)"></app-element-leveled>
-  <!-- <app-list-elements *ngIf="element.children" [elements]="element.children" [index]="i"></app-list-elements> -->
 </div>
